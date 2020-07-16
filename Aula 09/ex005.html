@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: cyan;
+            color: white;
+            font: normal 18pt Arial;
+            }
+    </style>
+</head>
+<body>
+    <h1 class="ttl">Iniciando estudos com DOM</h1>
+    <p name="prg">Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var qr = window.document.querySelector('div#msg')//seleciona div com id="msg"
+        var tr = window.document.querySelector('h1.ttl')//seleciona h1(título) com class="ttl"
+        var t = window.document.getElementsByClassName('ttl')[0]//seleciona o titulo pelo nome da classe pré definido
+        var s = window.document.getElementsByName('prg')[0]//selecionando elemento pelo nome pré definido
+        var p1 = window.document.getElementsByTagName('p')[0]//seleciona o primeiro parágrafo por tag
+        var d = window.document.getElementById('msg')//selecionando <div> por id pré definida
+        window.document.write('Está escrito assim: '+p1.innerText)
+        //p1.style.color = 'blue'//muda a cor do primeiro parágrafo para azul acessando o DOM por tag
+        //corpo.style.background = 'black'//muda a cor de fundo para preto acessando o DOM por tag
+        //d.style.background = 'green'//muda cor de fundo da div para verde
+        //d.innerText = 'Estou aguardando...'//muda mensagem da div para Estou aguardando...
+        //s.innerText = 'Olá'//muda mensagem do primiro parágrafo para Olá 
+        //t.innerText = 'Sei lá man'
+        qr.style.color = 'magenta'//muda a cor da div para magenta 
+        tr.style.color = 'yellow'//muda cor do título para amarelo
+    </script>
+</body>
+</html>

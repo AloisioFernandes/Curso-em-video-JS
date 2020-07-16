@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro Programa.</title>
+    <style>
+        body {
+            background-color: rgb(107, 107, 245);
+            color: white; /*Comentário em CSS*/
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--Comentário em html-->
+    <p>Me livrei da Maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))// Number.parseInt(n) converte string do window.prompt para número inteiro
+        var n2 = Number(window.prompt('Digite outro número: '))// converte string para valor detectado pelo JS (float,int,...)
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`)// frase entre crases permite uso direto de variáveis através do ${var}
+    </script>
+</body>
+</html>

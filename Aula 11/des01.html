@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Sua nacionalidade <input type="text" id="nacdd">
+    <input type="button" value="Verificar" id="but" onclick="nacionalidade()">
+    <div id="nac">
+
+    </div>
+    <script>
+        function nacionalidade(){
+            var txtn = window.document.querySelector('input#nacdd')
+            var escr = window.document.querySelector('div#nac')
+            var naci = txtn.value
+            escr.innerHTML = `<p>Você nasceu no país <strong>${naci}</strong></p>`
+            if (naci == 'Brasil'){
+                escr.innerHTML += '<p>Você é brasileiro</p>'//+= impede que a frase da div seja substituída
+            } else {
+                escr.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+            escr.innerHTML += 'Obrigado por ter usado nosso site!'
+        }
+    </script>
+</body>
+</html>

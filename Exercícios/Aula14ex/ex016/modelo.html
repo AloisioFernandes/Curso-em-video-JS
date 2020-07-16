@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador ver.2020</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div>
+            <p>Início: 
+                <input type="number" name="init" id="init">
+            </p>
+            <p>Fim:
+                <input type="number" name="fin" id="fin">
+            </p>
+            <p>Passo:
+                <input type="number" name="pass" id="pass">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="cont">
+            Processando a contagem...
+        </div>
+    </section>
+    <footer> 
+        <p>&copy; ...</p>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>
